@@ -1,20 +1,191 @@
-article, footer, header, section{
-    
-    display: block;   
+/* font-face*/
+@font-face {
+    font-family: 'MuseoSans300';
+    font-style: normal;
+    font-weight: normal;
+    src: url('http://carlosandresviteri.com/fonts/museosans-webfont.eot');
+    src: url('http://carlosandresviteri.com/fonts/museosans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://carlosandresviteri.com/fonts/museosans-webfont.woff') format('woff'),
+         url('http://carlosandresviteri.com/fonts/museosans-webfont.ttf') format('truetype'),
+         url('http://carlosandresviteri.com/fonts/museosans-webfont.svg#MuseoSans300') format('svg');
 }
-article, footer, header, section{
-    
-    background: #ccc;
+/* etiquetas */
+a {
+    color: #333;
+}
+article.acordion  {  
+    background: #666;
+    border-radius: 5px;  
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);  
+    display: block;  
+    margin: 0 auto; 
+    margin-top: 40px; 
+    padding: 0.5em 0.5em 1px 0.5em;  
+    width: 26em;  
+}  
+article.acordion section {  
+    background: #333;  
+    border-radius: 3px;  
+    color: #333;  
+    display: block;  
+    height: 2em;  
+    margin: 0 0 0.5em 0;  
+    overflow: hidden;  
+    padding: 0 1em;
+    width: 24em;  
+}  
+article.acordion section h2 {  
+    color: #ddd;
+    font-size: 1em;  
+    font-weight: bold;  
+    line-height: 2em;  
+    margin: 0;  
+    padding: 0;  
+    width: 100%;  
+}  
+article.acordion section h2 a {  
+    color: inherit;  
+    display: block;  
+    line-height: 2em;  
+    outline: 0 none;  
+    text-decoration: none;  
+    width: 100%;  
+}  
+article.acordion section:target.ac1 {  
+    height: 14em;
+} 
+article.acordion section:target.ac2 {  
+    height: 17em;
+}
+article.acordion section:target.ac3 {  
+    height: 11em;
+} 
+article.acordion section:target {  
+    height: 27em;  
+    background-color: #fff;  
+}  
+article.acordion section:target h2 {  
+    color: #333;  
+    font-size: 1.6em;  
+}  
+article.acordion section,  
+article.acordion section h2 {  
+    transition: all 1s ease;  
+}  
+aside {
+    border-radius: 3px;
+    cursor: pointer;
+    height: 32px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 4px;
+    transition: all .3s linear;
+    width: 114px;
+}
+aside:hover {
+    transform: rotate(-3deg);
+}
+body {
+    background: #e0e0e0 url(../images/noise.png);
+    font-family: "MuseoSans300";
     font-size: 16px;
-    margin: 0.1em auto;
-    padding: 0.5em;
-    text-align: center;
-    border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
-    
+    margin: 0;
 }
-header h1{
-        font-size: 20px;
+img#logohtml5 {
+    margin: 14px 0 0 22px;
+}
+img.website {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin: 12px 0 4px 16px;
+}
+img.website:hover {
+    transform:scale(1.15);
+}
+p {
+    margin: 0;
+}
+p span {
+    color: #aaa;
+    margin: 0 0 0 108px;
+}
+p.redes {
+    display: inline-block;
+    margin: 6px 0 0 6px;
+    vertical-align: top;
+}
+/* divs */
+#asunto {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px #fff;
+    color: #222;
+    font-family: "MuseoSans300";
+    font-size: 14px;
+    height: 24px;
+    margin: 0 0 14px 21px;
+    outline: none;
+    padding: 3px;
+    width: 200px;
+}
+#botonEnviar {
+    background: #f3f3f3;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #111111;
+    font-family: "MuseoSans300";
+    height: 30px;
+    margin: 0 0 0 20px;
+    width: 60px;
+}
+#botonEnviar:hover {
+    border: 1px solid #c7c7c7;
+    box-shadow: 0 1px 1px rgba(0,0,0,.07);
+}
+#botonEnviar:active {
+    border: 1px solid #c7c7c7;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,.15);
+}
+#email {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px #fff;
+    color: #222;
+    font-family: "MuseoSans300";
+    font-size: 14px;
+    height: 24px;
+    margin: 0 0 14px 21px;
+    padding: 3px;
+    outline: none;
+    width: 200px;
+}
+#name {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px #fff;
+    color: #222;
+    font-family: "MuseoSans300";
+    font-size: 14px;
+    margin: 18px 0 14px 21px;
+    padding: 3px;
+    outline: none;
+    height: 24px;
+    width: 200px;
+}
+#text {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow:0 1px #fff;
+    color:#222;
+    font-size: 14px;
+    font-family: "MuseoSans300";
+    height: 100px;
+    margin: 0 0 14px 21px;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 3px;
+    white-space: pre-wrap;
+    width: 332px;
+    word-wrap: break-word;
 }
