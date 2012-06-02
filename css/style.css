@@ -1,15 +1,12 @@
 /* font-face*/
 @font-face {
-    font-family: 'MuseoSans300';
-    font-style: normal;
-    font-weight: normal;
-    src: url('http://carlosandresviteri.com/fonts/museosans-webfont.eot');
-    src: url('http://carlosandresviteri.com/fonts/museosans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://carlosandresviteri.com/fonts/museosans-webfont.woff') format('woff'),
-         url('http://carlosandresviteri.com/fonts/museosans-webfont.ttf') format('truetype'),
-         url('http://carlosandresviteri.com/fonts/museosans-webfont.svg#MuseoSans300') format('svg');
+    font-family: 'Marko One', serif;
+    
 }
 /* etiquetas */
+body{
+    font-family: 'Marko One', serif;
+}
 a {
     color: #333;
 }
